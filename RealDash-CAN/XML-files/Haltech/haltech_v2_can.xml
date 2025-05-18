@@ -140,7 +140,9 @@
     <frame id="0x3E2" endianess="big">
       <value name="Haltech: Fuel Consumption Rate" offset="2" length="2" conversion="V*0.01"></value>
       <value name="Haltech: Average Fuel Economy" offset="4" length="2" conversion="V*0.1"></value>
-    </frame>
+    <value length="2" offset="0" conversion="V*0.1" name="Haltech: Fuel Level"/>
+
+</frame>
 
     <frame id="0x3E3" endianess="big">
       <value targetId="17" units="%" offset="0" length="2" conversion="V*0.1"></value> <!-- fuel corr 1 -->
