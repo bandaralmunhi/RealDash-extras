@@ -9,8 +9,7 @@
     </frame>
 
     <frame id="0x361" endianess="big">
-      <value targetId="202" units="psi" offset="0" length="2" conversion="V*0.001"></value> <!-- fuel pressure -->
-      <value targetId="151" units="psi" offset="2" length="2" conversion="V*0.001"></value> <!-- oil pressure -->
+     
       <value name="Haltech: Accelerator Pedal Pos" units="%" offset="4" length="2" conversion="V*0.1"></value>
       <value name="Haltech: Wastegate Pressure" units="kPA" offset="6" length="2" conversion="V*0.1"></value>
     </frame>
@@ -141,7 +140,16 @@
       <value name="Haltech: Fuel Consumption Rate" offset="2" length="2" conversion="V*0.01"></value>
       <value name="Haltech: Average Fuel Economy" offset="4" length="2" conversion="V*0.1"></value>
     <value length="2" offset="0" conversion="V*0.1" name="Haltech: Fuel Level"/>
-</frame>
+<value length="2" offset="0" conversion="V*0.1" name="Haltech: Fuel Level"/>
+<value length="2" offset="0" targetId="202" conversion="V*0.1 - 101.3" units="kPA"/>
+<!-- fuel pressure -->
+<value length="2" offset="2" targetId="151" conversion="V*0.1 - 101.3" units="kPA"/>
+<!-- engine oil pressure-->
+
+
+
+
+
 
 
     <frame id="0x3E3" endianess="big">
