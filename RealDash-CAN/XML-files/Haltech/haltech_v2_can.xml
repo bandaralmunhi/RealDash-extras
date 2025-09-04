@@ -9,8 +9,8 @@
     </frame>
 
     <frame id="0x361" endianess="big">
-      <value targetId="202" units="bar" offset="0" length="2" conversion="V*0.001"></value> <!-- fuel pressure -->
-      <value targetId="151" units="bar" offset="2" length="2" conversion="V*0.001"></value> <!-- oil pressure -->
+      <value targetId="202" units="bar" offset="0" length="2" conversion="V*0.001-14.7"></value> <!-- fuel pressure -->
+      <value targetId="151" units="bar" offset="2" length="2" conversion="V*0.001-14.7"></value> <!-- oil pressure -->
       <value name="Haltech: Accelerator Pedal Pos" units="%" offset="4" length="2" conversion="V*0.1"></value>
       <value name="Haltech: Wastegate Pressure" units="kPA" offset="6" length="2" conversion="V*0.1"></value>
     </frame>
