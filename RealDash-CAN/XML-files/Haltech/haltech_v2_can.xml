@@ -220,7 +220,7 @@
 <value targetId="185" units="bit" offset="4" startbit="0" bitcount="1"/>
 <!--  fuel pump 4  -->
 </frame>
-<frame id="0x477" endianess="big">
+
 <frame id="0x477" size="8" endianess="big">
       <value name="Haltech: Engine Limiter Max RPM" offset="0" length="2" rangeMin="0" rangeMax="12000"></value>
       <value name="Haltech: Cut Percentage" units="%" offset="2" length="2" conversion="V*0.1"></value>
