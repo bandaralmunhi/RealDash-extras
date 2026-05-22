@@ -150,13 +150,13 @@
       <value name="Haltech: Antilag Output State" units="bit" offset="4" startbit="5" bitcount="1"></value>
       <value name="Haltech: Traction Control Switch State" units="bit" offset="4" startbit="4" bitcount="1"></value>
       <value targetId="182" units="bit" offset="4" startbit="3" bitcount="1"></value> <value targetId="183" units="bit" offset="4" startbit="2" bitcount="1"></value> <value targetId="184" units="bit" offset="4" startbit="1" bitcount="1"></value> <value targetId="185" units="bit" offset="4" startbit="0" bitcount="1"></value> </frame>
-
-    <frame id="0x477" endianess="big">
-      <value name="Haltech: Engine Limiter Max RPM" offset="0" length="2" endianess="big" rangeMin="0" rangeMax="12000"></value>
-      <value name="Haltech: Cut Percentage" units="%" offset="2" length="2" endianess="big" conversion="V*0.1"></value>
+<frame id="0x477" endianess="big">
+      <value name="Haltech: Engine Limiter Max RPM" offset="0" length="2" endianess="little" rangeMin="0" rangeMax="12000"></value>
+      <value name="Haltech: Cut Percentage" units="%" offset="2" length="2" endianess="little" conversion="V*0.1"></value>
       <value name="Haltech: Engine Limiter Function" offset="4" length="1"></value>
       <value name="Haltech: RPM Limiter Function" offset="5" length="1"></value>
     </frame>
+  
 <frame id="0x6F7" endianess="big">
       <value name="Haltech: Generic Output 1" units="bit" offset="3" startbit="0" bitcount="1"></value>
       <value name="Haltech: Generic Output 2" units="bit" offset="3" startbit="1" bitcount="1"></value>
